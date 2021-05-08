@@ -1,18 +1,24 @@
 /* Styling for the portfolio page after reset */
 
+/* Color variables */
+:root {
+    --darkGrey: #31343d;
+    --cyan: #92ccce;
+}
+
 header {
-    background-color: #31343d;
+    background-color: var(--darkGrey);
     padding: 15px 0px;
 }
 
 header h1 {
-    font-size: 36px;
-    background-color: #92ccce;
+    font-size: 2.5rem;
+    background-color: var(--cyan);
     color: #31343d;
     padding: 5px 10px 5px 50px;
 }
 
-/* A class to push content to the left and right justifications */
+/* A class to push content to the left and right justifications of the webpage */
 .flexSpaceBetween {
     display: flex;
     justify-content: space-between;
@@ -24,10 +30,32 @@ header nav {
 }
 
 header a {
-    color: #92ccce;
+    color: var(--cyan);
     text-decoration: none;
     border-bottom: 3px solid;
     margin: 5px;
     padding: 0px 8px 2px 8px;
     font-weight: 550;
+    font-size: 1rem;
+}
+
+/* The top background hero image */
+.hero {
+    height: 250px;
+    width: 100%;
+    background-image: url("../Assets/images/sunHero.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero h2 {
+    display: inline-block;
+    position: absolute;
+    font-size: 1.5rem;
+    background-color: var(--cyan);
+    color: var(--darkGrey);
+    padding: 5px;
+    right: 50px;
+    bottom: 20px;
 }
