@@ -11,3 +11,7 @@ The form of this project consists of a home page that leads to sub pages contain
 Add Link
 
 Add Screenshot
+
+## Credits
+
+reset.css file sourced from the Full Stack Web Development bootcamp provided by Trilogy Education Services, LLC.
