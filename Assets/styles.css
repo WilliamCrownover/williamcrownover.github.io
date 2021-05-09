@@ -1,5 +1,9 @@
 /* Styling for the portfolio page after reset */
 
+* {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
 /* Color variables */
 :root {
     --darkGrey: #31343d;
@@ -51,7 +55,7 @@ header a {
     border-bottom: 3px solid;
     margin: 5px;
     padding: 0px 8px 2px 8px;
-    font-weight: 550;
+    font-weight: 500;
     font-size: 1rem;
 }
 

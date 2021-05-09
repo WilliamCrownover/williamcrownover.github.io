@@ -14,4 +14,4 @@ Add Screenshot
 
 ## Credits
 
-reset.css file sourced from the Full Stack Web Development bootcamp provided by Trilogy Education Services, LLC.
+reset.css file sourced from https://meyerweb.com/eric/tools/css/reset/
