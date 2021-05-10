@@ -141,6 +141,7 @@ p {
 
 .imageContainer img, .imageContainer-main img {
     opacity: .4;
+    transition: opacity .5s;
 }
 
 .imageContainer img:hover, .imageContainer-main img:hover {
