@@ -19,7 +19,7 @@ header {
 h1 {
     font-size: 2.5rem;
     background-color: var(--cyan);
-    color: #31343d;
+    color: var(--darkGrey);
     padding: 5px 10px 5px 50px;
 }
 
@@ -32,6 +32,17 @@ h3 {
     margin-right: 20px;
     display: inline-block;
     width: 120px;
+}
+
+h4 {
+    font-size: 1.25rem;
+    color: var(--darkGrey);
+}
+
+h5 {
+    font-size: .8rem;
+    padding-top: 5px;
+    font-weight: 500;
 }
 
 /* A class to push content to the left and right justifications of the webpage */
@@ -94,12 +105,25 @@ p {
     margin-bottom: 15px;
 }
 
+.imageContainer {
+    position: relative;
+}
+
+.project-title {
+    position: absolute;
+    bottom: 25px;
+    padding: 5px 10px;
+    background-color: var(--cyan);
+}
+
 .project {
     display: flex;
     object-fit: cover;
     width: 48.5%;
     height: 100px;
-    padding: 5px 0px;
+    margin: 5px 0px;
+    box-sizing: border-box;
+    border: 4px solid var(--cyan);
 }
 
 .project-main {
@@ -107,5 +131,7 @@ p {
     object-fit: cover;
     width: 100%;
     height: 350px;
-    padding: 5px 0px;
+    margin: 5px 0px;
+    box-sizing: border-box;
+    border: 4px solid var(--cyan);
 }
