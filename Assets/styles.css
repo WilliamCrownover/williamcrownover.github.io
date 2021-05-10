@@ -172,6 +172,7 @@ p {
 }
 
 @media screen and (max-width: 860px) {
+    /* Responsive Header Styling */
     .flexSpaceBetween {
         flex-direction: column;
         align-items: center;
@@ -188,5 +189,16 @@ p {
     header nav {
         margin-right: 0px;
         margin-top: 15px;
+    }
+
+    /* Responsive Hero Image Styling */
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .hero h2 {
+       position: initial;
+       margin-bottom: 5px;
     }
 }
