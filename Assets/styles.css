@@ -9,6 +9,7 @@
     --darkGrey: #31343d;
     --cyan: #92ccce;
     --bodyGrey: #445877;
+    --rightSpacing: 5%;
 }
 
 header {
@@ -54,7 +55,7 @@ h5 {
 .sectionRow {
     display: flex;
     justify-content: flex-end;
-    margin: 20px 50px 50px auto;
+    margin: 20px 5% 50px auto;
 }
 
 .columnAlignment {
@@ -65,7 +66,7 @@ h5 {
 }
 
 header nav {
-    margin-right: 50px;
+    margin-right: var(--rightSpacing);
     margin-top: 20px;
 }
 
@@ -73,7 +74,7 @@ header a {
     color: var(--cyan);
     text-decoration: none;
     border-bottom: 3px solid;
-    margin: 5px;
+    margin: 2px;
     padding: 0px 8px 2px 8px;
     font-weight: 500;
     font-size: 1rem;
@@ -96,7 +97,7 @@ header a {
     background-color: var(--cyan);
     color: var(--darkGrey);
     padding: 5px;
-    right: 50px;
+    right: var(--rightSpacing);
     bottom: 20px;
 }
 
