@@ -201,4 +201,25 @@ p {
        position: initial;
        margin-bottom: 5px;
     }
+
+    /* Main Section Responsive Styling */
+    .sectionRow {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 20px 5% 30px 5%;
+    }
+
+    h3 {
+        width: 100%;
+        border-bottom: solid var(--bodyGrey);
+        border-right: none;
+        padding: 0px 0px 8px 0px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .columnAlignment {
+        width: 100%;
+    }
 }
