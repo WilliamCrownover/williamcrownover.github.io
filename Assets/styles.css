@@ -109,17 +109,23 @@ p {
     display: flex;
     position: relative;
     width: 100%;
+    box-sizing: border-box;
+    border: 4px solid var(--cyan);
+    margin: 5px 0px;
 }
 
 .imageContainer {
     display: flex;
     position: relative;
     width: 48.5%;
+    box-sizing: border-box;
+    border: 4px solid var(--cyan);
+    margin: 5px 0px;
 }
 
 .project-title {
     position: absolute;
-    bottom: 25px;
+    bottom: 15px;
     padding: 5px 10px;
     background-color: var(--cyan);
 }
@@ -129,9 +135,16 @@ p {
     object-fit: cover;
     width: 100%;
     height: 100px;
-    margin: 5px 0px;
-    box-sizing: border-box;
-    border: 4px solid var(--cyan);
+    
+    
+}
+
+.imageContainer img, .imageContainer-main img {
+    opacity: .4;
+}
+
+.imageContainer img:hover, .imageContainer-main img:hover {
+    opacity: 1;
 }
 
 .project-main {
@@ -139,7 +152,4 @@ p {
     object-fit: cover;
     width: 100%;
     height: 350px;
-    margin: 5px 0px;
-    box-sizing: border-box;
-    border: 4px solid var(--cyan);
 }
