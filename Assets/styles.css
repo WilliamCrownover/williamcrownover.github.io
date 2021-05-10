@@ -80,6 +80,23 @@ header a {
     font-size: 1rem;
 }
 
+.columnAlignment ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+}
+
+.columnAlignment a {
+    color: var(--bodyGrey);
+    text-decoration: none;
+    border-bottom: 3px solid;
+    margin: 20px;
+    padding: 0px 8px 2px 8px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
 /* The top background hero image */
 .hero {
     height: 250px;
