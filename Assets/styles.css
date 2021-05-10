@@ -30,6 +30,8 @@ h3 {
     color: var(--bodyGrey);
     text-align: right;
     margin-right: 20px;
+    display: inline-block;
+    width: 120px;
 }
 
 /* A class to push content to the left and right justifications of the webpage */
@@ -40,8 +42,15 @@ h3 {
 
 .sectionRow {
     display: flex;
-    justify-content: center;
-    margin: 20px 50px 50px 100px;
+    justify-content: flex-end;
+    margin: 20px 50px 50px auto;
+}
+
+.columnAlignment {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 header nav {
@@ -83,4 +92,20 @@ header a {
 p {
     color: var(--bodyGrey);
     margin-bottom: 15px;
+}
+
+.project {
+    display: flex;
+    object-fit: cover;
+    width: 48.5%;
+    height: 100px;
+    padding: 5px 0px;
+}
+
+.project-main {
+    display: flex;
+    object-fit: cover;
+    width: 100%;
+    height: 350px;
+    padding: 5px 0px;
 }
