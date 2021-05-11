@@ -171,7 +171,7 @@ p {
     height: 350px;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 850px) {
     /* Responsive Header Styling */
     .flexSpaceBetween {
         flex-direction: column;
@@ -215,11 +215,22 @@ p {
         border-right: none;
         padding: 0px 0px 8px 0px;
         margin-right: 0px;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         text-align: left;
     }
 
     .columnAlignment {
         width: 100%;
+        justify-content: center;
+    }
+
+    /* Responsive Styling Main Section Project Images */
+    .imageContainer, .imageContainer-main {
+        width: 98%;
+    }
+    
+    .imageContainer img, .imageContainer-main img {
+        height: 100px;
+        opacity: 1;
     }
 }
