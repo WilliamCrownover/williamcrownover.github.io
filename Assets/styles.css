@@ -1,4 +1,5 @@
 /* Styling for the portfolio page after reset */
+/* -------------------------------------------------------------------------------- */
 * {
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -20,7 +21,6 @@ h1 {
     color: var(--darkGrey);
     padding: 5px 10px 5px 50px;
 }
-
 h2 {
     display: inline-block;
     position: absolute;
@@ -31,7 +31,6 @@ h2 {
     right: var(--rightSpacing);
     bottom: 20px;
 }
-
 h3 {
     font-size: 2rem;
     border-right: solid var(--bodyGrey);
@@ -42,12 +41,10 @@ h3 {
     display: inline-block;
     width: 120px;
 }
-
 h4 {
     font-size: 1.25rem;
     color: var(--darkGrey);
 }
-
 h5 {
     font-size: .8rem;
     padding-top: 5px;
@@ -88,36 +85,15 @@ header {
     background-color: var(--darkGrey);
     padding: 15px 0px;
 }
-
 header nav {
     margin-right: var(--rightSpacing);
     margin-top: 20px;
 }
-
 header a {
     color: var(--cyan);
     text-decoration: none;
     border-bottom: 3px solid;
     margin: 2px;
-    padding: 0px 8px 2px 8px;
-    font-weight: 500;
-    font-size: 1rem;
-}
-
-/* -------------------------------------------------------------------------------- */
-/* Bottom Contact Me Navigation Styling */
-.columnAlignment ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    width: 100%;
-}
-
-.columnAlignment a {
-    color: var(--bodyGrey);
-    text-decoration: none;
-    border-bottom: 3px solid;
-    margin: 20px;
     padding: 0px 8px 2px 8px;
     font-weight: 500;
     font-size: 1rem;
@@ -136,15 +112,7 @@ header a {
 
 /* -------------------------------------------------------------------------------- */
 /* Classes for Project Images and Title Card over top of the image */
-.imageContainer-main {
-    display: flex;
-    position: relative;
-    width: 100%;
-    box-sizing: border-box;
-    border: 4px solid var(--cyan);
-    margin: 5px 0px;
-}
-
+/* imageContainer applies the border and is the parent positioning element for project title cards */
 .imageContainer {
     display: flex;
     position: relative;
@@ -153,22 +121,24 @@ header a {
     border: 4px solid var(--cyan);
     margin: 5px 0px;
 }
+.imageContainer:first-child {
+    width: 100%;
+}
 
-.project {
+/* Sets the special size for the first project image */
+.imageContainer:first-child img {
+    height: 350px;
+}
+
+/* Sets the style for project images */
+.projectImage {
     display: flex;
     object-fit: cover;
     width: 100%;
     height: 100px;
 }
 
-.project-main {
-    display: flex;
-    object-fit: cover;
-    width: 100%;
-    height: 350px;
-}
-
-/* Title Card Class */
+/* Title Card Class applied over project images */
 .project-title {
     position: absolute;
     bottom: 15px;
@@ -176,15 +146,33 @@ header a {
     background-color: var(--cyan);
 }
 
-/* Sets initail image opacity lover than 100% */
-.imageContainer img, .imageContainer-main img {
+/* Sets initail image opacity lower than 100% */
+.imageContainer img {
     opacity: .4;
     transition: opacity .5s;
 }
 
 /* Sets the hover state of the images */
-.imageContainer img:hover, .imageContainer-main img:hover {
+.imageContainer img:hover {
     opacity: 1;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* Bottom Contact Me Navigation Styling */
+.columnAlignment ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+}
+.columnAlignment a {
+    color: var(--bodyGrey);
+    text-decoration: none;
+    border-bottom: 3px solid;
+    margin: 20px;
+    padding: 0px 8px 2px 8px;
+    font-weight: 500;
+    font-size: 1rem;
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -215,6 +203,7 @@ header a {
         justify-content: center;
         align-items: flex-end;
     }
+
     h2 {
        position: initial;
        margin-bottom: 5px;
@@ -243,11 +232,11 @@ header a {
     }
 
     /* Responsive Styling Main Section Project Images */
-    .imageContainer, .imageContainer-main {
+    .imageContainer, .imageContainer:first-child {
         width: 98%;
     }
     
-    .imageContainer img, .imageContainer-main img {
+    .imageContainer img, .imageContainer:first-child img {
         height: 100px;
         opacity: 1;
     }
