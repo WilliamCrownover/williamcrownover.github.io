@@ -171,6 +171,8 @@ p {
     height: 350px;
 }
 
+/* -------------------------------------------------------------------------------- */
+/* Mobile Responsive Styling */
 @media screen and (max-width: 850px) {
     /* Responsive Header Styling */
     .flexSpaceBetween {
@@ -202,7 +204,7 @@ p {
        margin-bottom: 5px;
     }
 
-    /* Main Section Responsive Styling */
+    /* Responsive Styling Main Section */
     .sectionRow {
         flex-direction: column;
         align-items: flex-start;
@@ -232,5 +234,18 @@ p {
     .imageContainer img, .imageContainer-main img {
         height: 100px;
         opacity: 1;
+    }
+
+    /* Responsive Styling Bottom Nav */
+    .columnAlignment ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 5px;
+    }
+    
+    .columnAlignment a {
+        margin: 0px;
+        margin-bottom: 10px;
+        padding: 0px 8px 2px 8px;
     }
 }
