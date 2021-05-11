@@ -1,10 +1,10 @@
 /* Styling for the portfolio page after reset */
-
 * {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-/* Color variables */
+/* -------------------------------------------------------------------------------- */
+/* Variables */
 :root {
     --darkGrey: #31343d;
     --cyan: #92ccce;
@@ -12,16 +12,24 @@
     --rightSpacing: 5%;
 }
 
-header {
-    background-color: var(--darkGrey);
-    padding: 15px 0px;
-}
-
+/* -------------------------------------------------------------------------------- */
+/* Base Element Styling, h's, p */
 h1 {
     font-size: 2.5rem;
     background-color: var(--cyan);
     color: var(--darkGrey);
     padding: 5px 10px 5px 50px;
+}
+
+h2 {
+    display: inline-block;
+    position: absolute;
+    font-size: 1.5rem;
+    background-color: var(--cyan);
+    color: var(--darkGrey);
+    padding: 5px;
+    right: var(--rightSpacing);
+    bottom: 20px;
 }
 
 h3 {
@@ -46,23 +54,39 @@ h5 {
     font-weight: 500;
 }
 
-/* A class to push content to the left and right justifications of the webpage */
+p {
+    color: var(--bodyGrey);
+    margin-bottom: 15px;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* Flexbox Classes */
+/* Pushes content to the left and right justifications of the webpage */
 .flexSpaceBetween {
     display: flex;
     justify-content: space-between;
 }
 
+/* Justifies main section title and content as a row */
 .sectionRow {
     display: flex;
     justify-content: flex-end;
     margin: 20px 5% 50px auto;
 }
 
+/* Aligns the vertical lines of the main body sections into a column */
 .columnAlignment {
     width: 75%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* Top header Styling */
+header {
+    background-color: var(--darkGrey);
+    padding: 15px 0px;
 }
 
 header nav {
@@ -80,6 +104,8 @@ header a {
     font-size: 1rem;
 }
 
+/* -------------------------------------------------------------------------------- */
+/* Bottom Contact Me Navigation Styling */
 .columnAlignment ul {
     display: flex;
     justify-content: space-between;
@@ -97,7 +123,8 @@ header a {
     font-size: 1rem;
 }
 
-/* The top background hero image */
+/* -------------------------------------------------------------------------------- */
+/* The top background hero image class */
 .hero {
     height: 250px;
     width: 100%;
@@ -107,22 +134,8 @@ header a {
     position: relative;
 }
 
-.hero h2 {
-    display: inline-block;
-    position: absolute;
-    font-size: 1.5rem;
-    background-color: var(--cyan);
-    color: var(--darkGrey);
-    padding: 5px;
-    right: var(--rightSpacing);
-    bottom: 20px;
-}
-
-p {
-    color: var(--bodyGrey);
-    margin-bottom: 15px;
-}
-
+/* -------------------------------------------------------------------------------- */
+/* Classes for Project Images and Title Card over top of the image */
 .imageContainer-main {
     display: flex;
     position: relative;
@@ -141,13 +154,6 @@ p {
     margin: 5px 0px;
 }
 
-.project-title {
-    position: absolute;
-    bottom: 15px;
-    padding: 5px 10px;
-    background-color: var(--cyan);
-}
-
 .project {
     display: flex;
     object-fit: cover;
@@ -155,20 +161,30 @@ p {
     height: 100px;
 }
 
-.imageContainer img, .imageContainer-main img {
-    opacity: .4;
-    transition: opacity .5s;
-}
-
-.imageContainer img:hover, .imageContainer-main img:hover {
-    opacity: 1;
-}
-
 .project-main {
     display: flex;
     object-fit: cover;
     width: 100%;
     height: 350px;
+}
+
+/* Title Card Class */
+.project-title {
+    position: absolute;
+    bottom: 15px;
+    padding: 5px 10px;
+    background-color: var(--cyan);
+}
+
+/* Sets initail image opacity lover than 100% */
+.imageContainer img, .imageContainer-main img {
+    opacity: .4;
+    transition: opacity .5s;
+}
+
+/* Sets the hover state of the images */
+.imageContainer img:hover, .imageContainer-main img:hover {
+    opacity: 1;
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -199,7 +215,7 @@ p {
         justify-content: center;
         align-items: flex-end;
     }
-    .hero h2 {
+    h2 {
        position: initial;
        margin-bottom: 5px;
     }
