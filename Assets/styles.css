@@ -65,7 +65,7 @@ p {
     justify-content: space-between;
 }
 
-/* Justifies main section title and content as a row */
+/* Justifies main section title h3 and content as a row */
 .sectionRow {
     display: flex;
     justify-content: flex-end;
@@ -170,7 +170,7 @@ header a {
     color: var(--bodyGrey);
     text-decoration: none;
     border-bottom: 3px solid;
-    margin: 20px;
+    margin: 20px 1%;
     padding: 0px 8px 2px 8px;
     font-weight: 500;
     font-size: 1rem;
@@ -249,7 +249,7 @@ header a {
         margin-top: 5px;
     }
     
-    .columnAlignment a {
+    .columnAlignment ul a {
         margin: 0px;
         margin-bottom: 10px;
         padding: 0px 8px 2px 8px;
