@@ -10,7 +10,7 @@ The form of this project consists of a home page that leads to sub pages contain
 
 https://williamcrownover.github.io/
 
-Add Screenshot
+![Portfolio Website Screenshot](./Assets/images/portfolio-screenshot.jpg)
 
 ## Credits
 
