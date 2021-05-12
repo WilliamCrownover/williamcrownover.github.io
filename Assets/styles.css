@@ -34,7 +34,7 @@ h2 {
 h3 {
     font-size: 2rem;
     border-right: solid var(--bodyGrey);
-    padding: 5px 10px 0px 0px;
+    padding: 5px 10px 0 0;
     color: var(--bodyGrey);
     text-align: right;
     margin-right: 20px;
@@ -59,7 +59,7 @@ p {
 
 li {
     display: inline-block;
-    margin: 0px 2px;
+    margin: 0 2px;
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -89,7 +89,7 @@ li {
 /* Top header Styling */
 header {
     background-color: var(--darkGrey);
-    padding: 15px 0px;
+    padding: 15px 0;
 }
 header nav {
     margin-right: var(--rightSpacing);
@@ -100,7 +100,7 @@ header a {
     text-decoration: none;
     border-bottom: 3px solid;
     /* margin: 2px; */
-    padding: 0px 8px 2px 8px;
+    padding: 0 8px 2px 8px;
     font-weight: 500;
     font-size: 1rem;
 }
@@ -125,7 +125,7 @@ header a {
     width: calc(50% - 5px);
     box-sizing: border-box;
     border: 4px solid var(--cyan);
-    margin: 5px 0px;
+    margin: 5px 0;
 }
 .imageContainer:first-child {
     width: 100%;
@@ -175,12 +175,12 @@ header a {
     color: var(--bodyGrey);
     text-decoration: none;
     border-bottom: 3px solid;
-    padding: 0px 8px 2px 8px;
+    padding: 0 8px 2px 8px;
     font-weight: 500;
     font-size: 1rem;
 }
 .columnAlignment li {
-    margin: 20px 1% 0px 1%;
+    margin: 20px 1% 0 1%;
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -190,18 +190,18 @@ header a {
     .flexSpaceBetween {
         flex-direction: column;
         align-items: center;
-        padding-top: 0px;
+        padding-top: 0;
     }
 
     h1 {
         width: 100%;
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-left: 0;
+        padding-right: 0;
         text-align: center;
     }
 
     header nav {
-        margin-right: 0px;
+        margin-right: 0;
         margin-top: 15px;
     }
 
@@ -228,8 +228,8 @@ header a {
         width: 100%;
         border-bottom: solid var(--bodyGrey);
         border-right: none;
-        padding: 0px 0px 8px 0px;
-        margin-right: 0px;
+        padding: 0 0 8px 0;
+        margin-right: 0;
         margin-bottom: 15px;
         text-align: left;
     }
@@ -257,13 +257,13 @@ header a {
     }
     
     .columnAlignment ul a {
-        margin: 0px;
+        margin: 0;
         margin-bottom: 10px;
-        padding: 0px 8px 2px 8px;
+        padding: 0 8px 2px 8px;
     }
 
     .columnAlignment li {
-        margin-top: 0px;
+        margin-top: 0;
         margin-bottom: 15px;
         margin: 0 0 15px 0;
     }
