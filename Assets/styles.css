@@ -14,7 +14,7 @@
 }
 
 /* -------------------------------------------------------------------------------- */
-/* Base Element Styling, h's, p */
+/* Base Element Styling, h's, p, li */
 h1 {
     font-size: 2.5rem;
     background-color: var(--cyan);
@@ -57,6 +57,11 @@ p {
     margin-bottom: 15px;
 }
 
+li {
+    display: inline-block;
+    margin: 0px 2px;
+}
+
 /* -------------------------------------------------------------------------------- */
 /* Flexbox Classes */
 /* Pushes content to the left and right justifications of the webpage */
@@ -94,7 +99,7 @@ header a {
     color: var(--cyan);
     text-decoration: none;
     border-bottom: 3px solid;
-    margin: 2px;
+    /* margin: 2px; */
     padding: 0px 8px 2px 8px;
     font-weight: 500;
     font-size: 1rem;
@@ -170,10 +175,12 @@ header a {
     color: var(--bodyGrey);
     text-decoration: none;
     border-bottom: 3px solid;
-    margin: 20px 1%;
     padding: 0px 8px 2px 8px;
     font-weight: 500;
     font-size: 1rem;
+}
+.columnAlignment li {
+    margin: 20px 1% 0px 1%;
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -253,5 +260,11 @@ header a {
         margin: 0px;
         margin-bottom: 10px;
         padding: 0px 8px 2px 8px;
+    }
+
+    .columnAlignment li {
+        margin-top: 0px;
+        margin-bottom: 15px;
+        margin: 0 0 15px 0;
     }
 }
