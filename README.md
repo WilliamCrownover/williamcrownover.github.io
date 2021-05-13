@@ -12,6 +12,14 @@ https://williamcrownover.github.io/
 
 ![Portfolio Website Screenshot](./Assets/images/portfolio-screenshot.jpg)
 
+## Technologies & Design
+
+- The photos used for the site were sourced from my own photography
+- The images are formatted to scale to the size on the page when viewed on a 2k display
+- Flexbox and Media Queries are implemented to create a responsive layout that can adjust to a mobile display
+- The page was built with accessibility in mind and passes with 100% running a Lighthouse evaluation in the google dev tools
+
+
 ## Credits
 
 reset.css file sourced from https://meyerweb.com/eric/tools/css/reset/
