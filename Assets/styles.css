@@ -11,10 +11,12 @@ main {
 /* -------------------------------------------------------------------------------- */
 /* Variables */
 :root {
-    --darkPurple: #1c1729;
-    --orange: #e78b49;
-    --bodyBrown: #682c21;
-    --lightGrey: #ccc7cc;
+    /* --darkPurple: #1c1729; */
+    --darkPurple: #726b7b;
+    --orange: #ffa800;
+    --bodyBrown: #a5481d;
+    /* --lightGrey: #ccc7cc; */
+    --lightGrey: #050917;
     --rightSpacing: 5%;
     --colAlign: 80%;
 }
@@ -24,7 +26,7 @@ main {
 h1 {
     font-size: 2.5rem;
     background-color: var(--orange);
-    color: var(--darkPurple);
+    color: var(--lightGrey);
     padding: 5px 15px 5px 50px;
     border-bottom-right-radius: 25px;
     font-weight: 600;
