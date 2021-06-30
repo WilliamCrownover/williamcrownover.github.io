@@ -5,24 +5,26 @@
 }
 
 main {
-    background-color: #ccc7cc;
+    background-color: var(--lightGrey);
 }
 
 /* -------------------------------------------------------------------------------- */
 /* Variables */
 :root {
-    --darkGrey: #1c1729;
-    --cyan: #ed904e;
-    --bodyGrey: #682c21;
+    --darkPurple: #1c1729;
+    --orange: #ed904e;
+    --bodyBrown: #682c21;
+    --lightGrey: #ccc7cc;
     --rightSpacing: 5%;
+    --colAlign: 80%;
 }
 
 /* -------------------------------------------------------------------------------- */
 /* Base Element Styling, h's, p, ul, li */
 h1 {
     font-size: 2.5rem;
-    background-color: var(--cyan);
-    color: var(--darkGrey);
+    background-color: var(--orange);
+    color: var(--darkPurple);
     padding: 5px 15px 5px 50px;
     border-bottom-right-radius: 25px;
 }
@@ -30,17 +32,17 @@ h2 {
     display: inline-block;
     position: absolute;
     font-size: 1.5rem;
-    background-color: var(--cyan);
-    color: var(--darkGrey);
+    background-color: var(--orange);
+    color: var(--darkPurple);
     padding: 5px;
     right: var(--rightSpacing);
     bottom: 20px;
 }
 h3 {
     font-size: 2rem;
-    border-right: solid var(--bodyGrey);
+    border-right: solid var(--bodyBrown);
     padding: 5px 10px 0 0;
-    color: var(--bodyGrey);
+    color: var(--bodyBrown);
     text-align: right;
     margin-right: 20px;
     display: inline-block;
@@ -48,17 +50,17 @@ h3 {
 }
 h4 {
     font-size: 1.25rem;
-    color: var(--darkGrey);
+    color: var(--orange);
 }
 h5 {
     font-size: .8rem;
     padding-top: 5px;
     font-weight: 500;
-    color: var(--darkGrey);
+    color: var(--darkPurple);
 }
 
 p {
-    color: var(--bodyGrey);
+    color: var(--bodyBrown);
     margin-bottom: 15px;
 }
 
@@ -84,22 +86,28 @@ li {
     display: flex;
     justify-content: flex-end;
     margin: 0 5% 0 auto;
-    padding-top: 20px;
-    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 60px;
 }
 
 /* Aligns the vertical lines of the main body sections into a column */
 .columnAlignment {
-    width: 75%;
+    width: var(--colAlign);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+.container {
+    width: var(--colAlign);
+    margin-left: 0;
+    margin-right: 0;
+    max-width: none;
 }
 
 /* -------------------------------------------------------------------------------- */
 /* Top header Styling */
 header {
-    background-color: var(--darkGrey);
+    background-color: var(--darkPurple);
     padding: 15px 0;
 }
 header nav {
@@ -108,7 +116,7 @@ header nav {
     background-color: none;
 }
 header a {
-    color: var(--cyan);
+    color: var(--orange);
     text-decoration: none;
     border-bottom: 3px solid;
     /* margin: 2px; */
@@ -117,7 +125,7 @@ header a {
     font-size: 1rem;
 }
 header a:hover {
-    color: var(--bodyGrey);
+    color: var(--bodyBrown);
     text-decoration: none;
 }
 
@@ -133,7 +141,7 @@ header a:hover {
     border-top-left-radius: 125px;
 }
 .heroDiv {
-    background-color: var(--darkGrey);
+    background-color: var(--darkPurple);
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -144,7 +152,7 @@ header a:hover {
     position: relative;
     width: calc(50% - 5px);
     box-sizing: border-box;
-    border: 4px solid var(--cyan);
+    border: 4px solid var(--orange);
     margin: 5px 0;
 }
 .imageContainer:first-child {
@@ -169,7 +177,7 @@ header a:hover {
     position: absolute;
     bottom: 15px;
     padding: 5px 10px;
-    background-color: var(--cyan);
+    background-color: var(--orange);
 }
 
 /* Sets initail image opacity lower than 100% */
@@ -192,7 +200,7 @@ header a:hover {
     width: 100%;
 }
 .columnAlignment ul a {
-    color: var(--bodyGrey);
+    color: var(--bodyBrown);
     text-decoration: none;
     border-bottom: 3px solid;
     padding: 0 8px 2px 8px;
@@ -200,18 +208,39 @@ header a:hover {
     font-size: 1rem;
 }
 .columnAlignment ul a:hover {
-    color: var(--cyan);
+    color: var(--orange);
 }
 .columnAlignment li {
     margin: 20px 1% 0 1%;
 }
 a:not([href]):not([class]) {
-    color: var(--bodyGrey);
+    color: var(--bodyBrown);
+}
+
+/* -------------------------------------------------------------------------------- */
+/* Bootstrap Adjustments */
+.card {
+    background-color: var(--darkPurple);
+    padding: 0;
+    width: 100%
+
+}
+
+.btn {
+    background-color: var(--lightGrey);
+    color: var(--bodyBrown);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.col-md-4 {
+    width: 100%;
+    padding: 0 5px;
 }
 
 /* -------------------------------------------------------------------------------- */
 /* Mobile Responsive Styling */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 830px) {
     /* Responsive Header Styling */
     .flexSpaceBetween {
         flex-direction: column;
@@ -255,7 +284,7 @@ a:not([href]):not([class]) {
     }
     h3 {
         width: 100%;
-        border-bottom: solid var(--bodyGrey);
+        border-bottom: solid var(--bodyBrown);
         border-right: none;
         padding: 0 0 8px 0;
         margin-right: 0;
@@ -266,6 +295,9 @@ a:not([href]):not([class]) {
     .columnAlignment {
         width: 100%;
         justify-content: center;
+    }
+    .container {
+        width: 100%;
     }
 
     /* Responsive Styling Main Section Project Images */
@@ -292,5 +324,11 @@ a:not([href]):not([class]) {
         margin-top: 0;
         margin-bottom: 15px;
         margin: 0 0 15px 0;
+    }
+
+    /* Bootstrap Adjustments */
+    .col-md-4 {
+        padding: 0 5px;
+        margin-bottom: 20px;
     }
 }
