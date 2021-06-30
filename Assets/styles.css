@@ -116,6 +116,10 @@ header a {
     font-weight: 500;
     font-size: 1rem;
 }
+header a:hover {
+    color: var(--bodyGrey);
+    text-decoration: none;
+}
 
 /* -------------------------------------------------------------------------------- */
 /* The top background hero image class */
@@ -191,8 +195,14 @@ header a {
     font-weight: 500;
     font-size: 1rem;
 }
+.columnAlignment ul a:hover {
+    color: var(--cyan);
+}
 .columnAlignment li {
     margin: 20px 1% 0 1%;
+}
+a:not([href]):not([class]) {
+    color: var(--bodyGrey);
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -234,7 +244,10 @@ header a {
     .sectionRow {
         flex-direction: column;
         align-items: flex-start;
-        margin: 20px 5% 30px 5%;
+        margin: 0 5% 0 5%;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    
     }
     h3 {
         width: 100%;
