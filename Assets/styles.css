@@ -12,7 +12,7 @@ main {
 /* Variables */
 :root {
     --darkPurple: #1c1729;
-    --orange: #ed904e;
+    --orange: #e78b49;
     --bodyBrown: #682c21;
     --lightGrey: #ccc7cc;
     --rightSpacing: 5%;
@@ -27,6 +27,7 @@ h1 {
     color: var(--darkPurple);
     padding: 5px 15px 5px 50px;
     border-bottom-right-radius: 25px;
+    font-weight: 600;
 }
 h2 {
     display: inline-block;
@@ -191,6 +192,11 @@ header a:hover {
     opacity: 1;
 }
 
+img {
+    object-fit: cover;
+    height: 240px;
+}
+
 /* -------------------------------------------------------------------------------- */
 /* Bottom Contact Me Navigation Styling */
 .columnAlignment ul {
@@ -222,8 +228,7 @@ a:not([href]):not([class]) {
 .card {
     background-color: var(--darkPurple);
     padding: 0;
-    width: 100%
-
+    width: 100%;
 }
 
 .btn {
