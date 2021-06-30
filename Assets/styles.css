@@ -4,22 +4,27 @@
     font-family: Helvetica, Arial, sans-serif;
 }
 
+main {
+    background-color: #ccc7cc;
+}
+
 /* -------------------------------------------------------------------------------- */
 /* Variables */
 :root {
-    --darkGrey: #31343d;
-    --cyan: #92ccce;
-    --bodyGrey: #445877;
+    --darkGrey: #1c1729;
+    --cyan: #ed904e;
+    --bodyGrey: #682c21;
     --rightSpacing: 5%;
 }
 
 /* -------------------------------------------------------------------------------- */
-/* Base Element Styling, h's, p, li */
+/* Base Element Styling, h's, p, ul, li */
 h1 {
     font-size: 2.5rem;
     background-color: var(--cyan);
     color: var(--darkGrey);
-    padding: 5px 10px 5px 50px;
+    padding: 5px 15px 5px 50px;
+    border-bottom-right-radius: 25px;
 }
 h2 {
     display: inline-block;
@@ -57,9 +62,13 @@ p {
     margin-bottom: 15px;
 }
 
+ul {
+    background-color: none;
+}
 li {
     display: inline-block;
     margin: 0 2px;
+    background-color: none;
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -74,7 +83,9 @@ li {
 .sectionRow {
     display: flex;
     justify-content: flex-end;
-    margin: 20px 5% 50px auto;
+    margin: 0 5% 0 auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 /* Aligns the vertical lines of the main body sections into a column */
@@ -94,6 +105,7 @@ header {
 header nav {
     margin-right: var(--rightSpacing);
     margin-top: 20px;
+    background-color: none;
 }
 header a {
     color: var(--cyan);
