@@ -1,114 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>William Crownover's GitHub Portfolio</title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    
-    <!-- Linking reset and style css here-->
-    <link rel="stylesheet" href="./Assets/reset.css">
-    <link rel="stylesheet" href="./Assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Linking normalize and style css here -->
+    <link rel="stylesheet" href="./Assets/css/normalize.css">
+    <link rel="stylesheet" href="./Assets/css/styles.css">
 </head>
 
 <body>
-
-    <!-- Header containing h1 and top navigation -->
-    <header class="flexSpaceBetween">
-        <h1>William Crownover</h1>
+    <main>
         <nav>
-            <ul>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#work">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="https://drive.google.com/file/d/1JjtNAo61FP7o9SI9EOI4ozSzHixYcqbT/view?usp=sharing" target="_blank">Resume</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Top background hero image with h2 -->
-    <div class="heroDiv">
-        <figure class="hero" title="Sunset over the Olympic Mountains, Washington">
-            <!-- <h2>Cool subtitle here!</h2> -->
-        </figure>
-    </div>
-
-    <!-- Main content of the page: About Me, Work, Contact Me -->
-    <main class="flexColumn">
-
-        <!-- Work Section with Project Images as links -->
-        <section class="sectionRow" id="work">
-            <h3>Projects</h3>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card">
-                            <a href="https://maryvpie.github.io/us-voter-representatives/" target="_blank" alt="Go to US Voter Representatives Webpage">
-                                <img src="./Assets/images/usVoteTool.jpg" class="card-img-top" alt="Screenshot of the website">
-                            </a>
-                            <div class="card-body">
-                                <h4 class="card-title">US Voter Representatives</h4>
-                                <a href="https://maryvpie.github.io/us-voter-representatives/" target="_blank" class="btn">Deployed Site</a>
-                                <a href="https://github.com/WilliamCrownover/us-voter-representatives" target="_blank" class="btn">Repository</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <a href="https://williamcrownover.github.io/weather-forecast-dashboard/" target="_blank" alt="Go to Weather Forecast Dashboard Webpage">
-                                <img src="./Assets/images/weather.jpg" class="card-img-top" alt="Screenshot of the website">
-                            </a>
-                            <div class="card-body">
-                                <h4 class="card-title">Weather Forecast Dashboard</h4>
-                                <a href="https://williamcrownover.github.io/weather-forecast-dashboard/" target="_blank" class="btn">Deployed Site</a>
-                                <a href="https://github.com/WilliamCrownover/weather-forecast-dashboard" target="_blank" class="btn">Repository</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <a href="https://williamcrownover.github.io/javascript-coding-quiz/" target="_blank" alt="Go to JavaScript Coding Quiz Webpage">
-                                <img src="./Assets/images/jsQuiz.jpg" class="card-img-top" alt="Screenshot of the website">
-                            </a>
-                            <div class="card-body">
-                                <h4 class="card-title">JavaScript Coding Quiz</h4>
-                                <a href="https://williamcrownover.github.io/javascript-coding-quiz/" target="_blank" class="btn">Deployed Site</a>
-                                <a href="https://github.com/WilliamCrownover/javascript-coding-quiz" target="_blank" class="btn">Repository</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>                
-            </div>
-        </section>
-
-        <!-- About Me section -->
-        <section class="sectionRow" id="about-me">
-            <h3>About Me</h3>
-            <div class="columnAlignment">
-                <p>
-                    Front-end web developer applying digital media production degree and freelance graphic design experience to build engaging and interactive data visualization websites. Recently certified by the University of Washington in full stack web development which includes proficient skills in JavaScript, CSS, HTML, jQuery, and 3rd-party APIs. Respectable team player who is a knowledgeable resource and helping hand for colleagues, I apply my organizational skills and attention to detail to each project to deliver a high quality product. My passions include enhancing user experiences and delving into data to present new intriguing patterns. I recently built the project “us-voter-representatives” with a team of five developers using three 3rd-party APIs and implemented responsive web design to help voters stay informed on their congressional representatives. I am thrilled to bring my knowledge and creativity to an inspirational team of developers looking to captivate knowledge seekers across the web.
-                </p>
-            </div>
-        </section>
-
-        <!-- Contact Me section with bottom navigation -->
-        <section class="sectionRow" id="contact">
-            <h3>Contact</h3>
-            <div class="columnAlignment">
-                <ul>
-                    <li><a href="https://github.com/WilliamCrownover" target="_blank">GitHub</a></li>
-                    <li><a href="https://www.linkedin.com/in/williamcrownover/" target="_blank">LinkedIn</a></li>
-                    <li><a>216.255.1947</a></li>
-                    <li><a>williamcrownover1@gmail.com</a></li>
+            <div class="flex-container">
+                <a href="index.html" class="name-link">William Crownover</a>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#about">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
                 </ul>
             </div>
+        </nav>
+
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1>William</h1>
+                <h1>Crownover</h1>
+                <h2>Full-stack Web Developer</h2>
+            </div>
+            <p class="copywrite-text">© Image - William Crownover</p>
+        </div>
+
+        <section id="about">
+            <h3>About Me</h3>
+            <p>Full-stack web developer applying digital media production degree and freelance graphic design experience
+                to build engaging and interactive data visualization websites. Recently certified by the University of
+                Washington in full stack web development. Respectable team player who is a knowledgeable resource and
+                helping hand for colleagues, I apply my organizational skills and attention to detail to each project to
+                deliver a high quality product. My passions include enhancing user experiences and delving into data to
+                present new intriguing patterns. I am thrilled to bring my knowledge and creativity to an inspirational
+                team of developers looking to captivate knowledge seekers across the web.</p>
+            <div class="flex-lists">
+                <div>
+                    <h4>Front-end Proficiencies</h4>
+                    <ul class="proficient-list">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                        <li>Handlebars.js</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Back-end Proficiencies</h4>
+                    <ul class="proficient-list">
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>MySQL2</li>
+                        <li>Sequelize</li>
+                    </ul>
+                </div>
+            </div>
         </section>
+
+        <section id="projects">
+            <h3>Projects</h3>
+            <div class="project-card">
+                <div class="project-image-btns">
+                    <img src="./Assets/images/slc.jpg">
+                    <div class="project-btn-wrapper">
+                        <a class="btn-left" href="https://shelf-life-206.herokuapp.com/" target="_blank"
+                            alt="Go to Shelf-Life Webpage">Live Site</a>
+                        <a class="btn-right" href="https://github.com/WilliamCrownover/shelf-life-continued"
+                            target="_blank" alt="Go to Shelf-Life Repo">Repository</a>
+                    </div>
+                </div>
+                <div class="project-text-info">
+                    <h4>Shelf-Life Continued</h4>
+                    <p>This full-stack web app helps user’s keep track of their grocery’s expiration dates in order to
+                        help them save food and money.</p>
+                    <br>
+                    <p>CONCEPTS: Full-stack app, Restful API, Database, MVC File Structure, Authentication</p>
+                    <br>
+                    <p>TECHNOLOGIES: HTML, CSS, JavaScript, Node.js, Express.js, Handlebars.js, MySQL2, Sequelize</p>
+                    <br>
+                    <p>Guest Account Info - guest@email.com - password123</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image-btns">
+                    <img src="./Assets/images/usvr.jpg">
+                    <div class="project-btn-wrapper">
+                        <a class="btn-left" href="https://williamcrownover.github.io/us-voter-representatives/"
+                            target="_blank" alt="Go to US Voter Representative Webpage">Live Site</a>
+                        <a class="btn-right" href="https://github.com/WilliamCrownover/us-voter-representatives"
+                            target="_blank" alt="Go to US Voter Representative Repo">Repository</a>
+                    </div>
+                </div>
+                <div class="project-text-info">
+                    <h4>US Voter Representative</h4>
+                    <p>This front-end web application aims to help United State voters easily find out information about
+                        their house representatives in congress. By using publicly available civic APIs we created a
+                        tool to bring hidden information to curious voters in a non-biased, comprehensible way.</p>
+                    <br>
+                    <p>CONCEPTS: Full-stack app, Responsive Design, Server-side API, Local Storage</p>
+                    <br>
+                    <p>TECHNOLOGIES: HTML, CSS, JavaScript, Materialize.css, jQuery, 3rd-party API’s</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image-btns">
+                    <img src="./Assets/images/wfd.jpg">
+                    <div class="project-btn-wrapper">
+                        <a class="btn-left" href="https://williamcrownover.github.io/weather-forecast-dashboard/"
+                            target="_blank" alt="Go to Weather Forecast Dashboard Webpage">Live Site</a>
+                        <a class="btn-right" href="https://github.com/WilliamCrownover/weather-forecast-dashboard"
+                            target="_blank" alt="Go to Weather Forecast Dashboard Repo">Repository</a>
+                    </div>
+                </div>
+                <div class="project-text-info">
+                    <h4>Weather Forecast Dashboard</h4>
+                    <p>This web application was designed as a quick way to look up the current and five day weather
+                        forecast for various cities around the world and compare the results between past city searches.
+                        The 3rd party API used for the weather data comes from OpenWeather. The UV index and forecast
+                        background colors are presented in response to the data so that the user on a glimpse can see
+                        how intense the UV light is and if the week will be cold or hot.</p>
+                    <br>
+                    <p>CONCEPTS: Front-end app, Dynamic HTML/CSS, 3rd-party API’s, Local Storage</p>
+                    <br>
+                    <p>TECHNOLOGIES: HTML, CSS, JavaScript, jQuery, Moment.js</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <img src="./Assets/images/ice.jpg">
+            <p class="copywrite-text-bottom">© Image - William Crownover</p>
+            <div class="contact-flex">
+                <div class="direct-contact">
+                    <h4>Feel free to reach out to me in any of the following ways!</h4>
+                    <p>Email: williamcrownover1@gmail.com</p>
+                    <p>Phone: 216.255.1947</p>
+                </div>
+                <div class="contact-links">
+                    <h4>Links</h4>
+                    <ul class="contact-links-list">
+                        <li>
+                            <a href="https://github.com/WilliamCrownover" target="_blank" alt="Go to William Crownover's GitHub">GitHub</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/williamcrownover/" target="_blank" alt="Go to William Crownover's LinkedIn">LinkedIn</a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1laQj9WBQavDpqf6tECh6emuurPL4Q-NW/view?usp=sharing" target="_blank" alt="View William Crownover's Resume">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </body>
+
 </html>
