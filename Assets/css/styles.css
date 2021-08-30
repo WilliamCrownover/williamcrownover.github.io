@@ -163,6 +163,7 @@ h4 {
 
 .project-card {
     display: flex;
+    margin-bottom: 70px;
 }
 
 .project-image-btns {
