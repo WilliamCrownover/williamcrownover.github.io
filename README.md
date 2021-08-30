@@ -4,21 +4,18 @@
 
 ## Description
 
-This project will be the host for my portfolio of web development work available to the public. I built this website so that I can easily consolidate my work for those who may be interested in using it or considering hiring me. My portfolio should demonstrate my abilities and growth of my skills in fullstack web development.
-
-The form of this project consists of a home page that leads to sub pages containing specific projects. Included on the home page is a nav bar leading to about me, projects, contact, and resume. The project section includes interesting photos of the projects that will intrigue viewers to click into the deployed site or explore the GitHub repo of that website.
+The most recent version of my web development portfolio featuring projects Shelf-Life Continued, US Voter Representatives, and Weather Forecast Dashboard. The portfolio is mobile responsive and features two of my own photographs from Antartica. Feel free to check it out!
 
 ## Live Site
 
 https://williamcrownover.github.io/
 
-![Portfolio Website Screenshot](./Assets/images/portfolio-screenshot.jpg)
+<img src="./Assets/images/portfolio-screenshot_v3.jpg" width="1200" alt="Screenshot of portfolio"/>
 
 ## Technologies & Design
 
-- The hero image used for the site was sourced from my own photography
+- The photography on the page was sourced from my own work, specifically from a trip to Antarctica
 - Flexbox and Media Queries are implemented to create a responsive layout that can adjust to a mobile display
-- Bootstrap and jQuery were linked into the project
 
 ## Future Development
 I will be updating my portfolio on a regular basis to include my feature projects.
@@ -27,8 +24,6 @@ I will be updating my portfolio on a regular basis to include my feature project
 Licensed under the MIT License - https://opensource.org/licenses/MIT
 
 ## Contact
-
 If you have any questions you can email me at williamcrownover1@gmail.com.
-
 
 You can also check out my other work on GitHub at [WilliamCrownover](https://github.com/WilliamCrownover)
