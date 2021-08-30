@@ -1,0 +1,53 @@
+* {
+    font-family: 'Libre Franklin', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --rustBrown: #74493d;
+    --rockLight: #a8927f;
+    --cloudWhite: #f2f4f1;
+}
+
+html {
+    background-color: var(--cloudWhite);
+}
+
+nav {
+    background-color: var(--rustBrown);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-link {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 15px 50px;
+    color: var(--cloudWhite);
+    padding: 0;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    margin-right: 50px;
+    padding: 0;
+}
+
+li a {
+    text-decoration: none;
+    padding: 25px 20px;
+    color: var(--cloudWhite);
+    transition: background-color 0.3s;
+}
+
+li a:hover {
+    background-color: var(--rockLight);
+    transition: background-color 0.3s;
+}
