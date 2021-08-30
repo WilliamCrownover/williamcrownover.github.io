@@ -16,6 +16,7 @@ html {
 
 nav {
     background-color: var(--rustBrown);
+    
 }
 
 .flex-container {
@@ -61,6 +62,7 @@ li a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    box-shadow: inset 0px 10px 15px -8px var(--coalBlack);
 }
 
 .hero-text {
@@ -81,12 +83,15 @@ h1 {
     font-size: 3.2rem;
     font-weight: 500;
     margin: 0;
+    text-shadow: 3px 3px var(--cloudWhite);
 }
 
 h2 {
     font-weight: 300;
     font-size: 2rem;
     margin: 15px 0;
+    text-shadow: 2px 2px var(--coalBlack);
+    color: var(--cloudWhite);
 }
 
 .copywrite-text {
