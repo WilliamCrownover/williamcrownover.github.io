@@ -208,3 +208,50 @@ img {
     flex: 1 1 100%;
     padding-left: 50px;
 }
+
+#contact {
+    padding: 0 0 40px 0;
+    background-color: var(--iceyWaters);
+}
+
+.copywrite-text-bottom {
+    color: var(--cloudBlue);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+.contact-flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.direct-contact,
+.contact-links {
+    flex: 0 0 30%;
+}
+
+.contact-links,
+.contact-links h4 {
+    text-align: right;
+}
+
+.direct-contact h4,
+.direct-contact p,
+.contact-links h4 {
+    color: var(--cloudWhite);
+    margin-bottom: 10px;
+}
+
+.contact-links-list {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-links-list li a {
+    padding: 0;
+}
+
+.contact-links-list li {
+    margin: 15px 0;
+}
