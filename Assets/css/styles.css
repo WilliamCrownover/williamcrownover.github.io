@@ -72,10 +72,17 @@ li a:hover {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4 {
     color: var(--coalBlack);
     text-align: right;
     font-family: 'Kanit', sans-serif;
+}
+
+h3,
+p {
+    text-align: left;
 }
 
 h1 {
@@ -90,8 +97,7 @@ h2 {
     font-weight: 300;
     font-size: 2rem;
     margin: 15px 0;
-    text-shadow: 2px 2px var(--coalBlack);
-    color: var(--cloudWhite);
+    text-shadow: 2px 2px var(--cloudWhite);
 }
 
 .copywrite-text {
@@ -101,4 +107,38 @@ h2 {
     bottom: 5px;
     left: 5px;
     font-size: .8rem;
+}
+
+section {
+    padding: 50px 70px;
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    border-bottom: solid 3px var(--rustBrown);
+    border-left: solid 10px var(--rustBrown);
+    padding-bottom: 10px;
+    padding-left: 30px;
+    margin: 30px 0;
+}
+
+p {
+    margin: 0;
+    line-height: 1.8;
+}
+
+.flex-lists {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.proficient-list li {
+    margin: 15px 0;
+    font-size: 1rem;
 }

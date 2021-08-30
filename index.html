@@ -9,7 +9,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <!-- Linking normalize and style css here -->
     <link rel="stylesheet" href="./Assets/css/normalize.css">
@@ -17,34 +19,70 @@
 </head>
 
 <body>
-    <nav>
-        <div class="flex-container">
-            <a href="index.html" class="name-link">William Crownover</a>
-            <ul class="nav-links">
-                <li>
-                    <a href="#about">About Me</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <main>
+        <nav>
+            <div class="flex-container">
+                <a href="index.html" class="name-link">William Crownover</a>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#about">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-    <div class="hero-image">
-        <div class="hero-text">
-            <h1>William</h1>
-            <h1>Crownover</h1>
-            <h2>Full-stack Web Developer</h2>
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1>William</h1>
+                <h1>Crownover</h1>
+                <h2>Full-stack Web Developer</h2>
+            </div>
+            <p class="copywrite-text">© Image - William Crownover</p>
         </div>
-        <p class="copywrite-text">© Image - William Crownover</p>
-    </div>
+
+        <section id="about">
+            <h3>About Me</h3>
+            <p>Full-stack web developer applying digital media production degree and freelance graphic design experience
+                to build engaging and interactive data visualization websites. Recently certified by the University of
+                Washington in full stack web development. Respectable team player who is a knowledgeable resource and
+                helping hand for colleagues, I apply my organizational skills and attention to detail to each project to
+                deliver a high quality product. My passions include enhancing user experiences and delving into data to
+                present new intriguing patterns. I am thrilled to bring my knowledge and creativity to an inspirational
+                team of developers looking to captivate knowledge seekers across the web.</p>
+            <div class="flex-lists">
+                <div>
+                    <h4>Front-end Proficiencies</h4>
+                    <ul class="proficient-list">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                        <li>Handlebars.js</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Back-end Proficiencies</h4>
+                    <ul class="proficient-list">
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>MySQL2</li>
+                        <li>Sequelize</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </body>
 
 </html>
