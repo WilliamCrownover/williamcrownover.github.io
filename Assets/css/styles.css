@@ -7,6 +7,7 @@
     --rustBrown: #74493d;
     --rockLight: #a8927f;
     --cloudWhite: #f2f4f1;
+    --coalBlack: #1b222f;
 }
 
 html {
@@ -23,12 +24,13 @@ nav {
 }
 
 .name-link {
-    font-size: 2rem;
-    font-weight: 500;
+    font-size: 1.8rem;
+    font-weight: 400;
     margin: 15px 50px;
     color: var(--cloudWhite);
     padding: 0;
     text-decoration: none;
+    font-family: 'Kanit', sans-serif;
 }
 
 .nav-links {
@@ -50,4 +52,48 @@ li a {
 li a:hover {
     background-color: var(--rockLight);
     transition: background-color 0.3s;
+}
+
+.hero-image {
+    background-image: url("../images/theMountain.jpg");
+    height: 500px;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    top: 10%;
+    right: 6%;
+}
+
+h1,
+h2 {
+    color: var(--coalBlack);
+    text-align: right;
+    font-family: 'Kanit', sans-serif;
+}
+
+h1 {
+    
+    font-size: 3.2rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 2rem;
+    margin: 15px 0;
+}
+
+.copywrite-text {
+    color: var(--cloudWhite);
+    margin: 0;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: .8rem;
 }
