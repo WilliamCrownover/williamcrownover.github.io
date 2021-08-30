@@ -4,10 +4,12 @@
 }
 
 :root {
-    --rustBrown: #74493d;
+    --rustBrown: #854b3c;
     --rockLight: #a8927f;
     --cloudWhite: #f2f4f1;
     --coalBlack: #1b222f;
+    --cloudBlue: #a6adbd;
+    --iceyWaters: #4e5460;
 }
 
 html {
@@ -81,6 +83,7 @@ h4 {
 }
 
 h3,
+h4,
 p {
     text-align: left;
 }
@@ -141,4 +144,66 @@ h4 {
 .proficient-list li {
     margin: 15px 0;
     font-size: 1rem;
+}
+
+#projects {
+    background-color: var(--cloudBlue);
+}
+
+#projects h3 {
+    border-bottom: solid 3px var(--iceyWaters);
+    border-left: solid 10px var(--iceyWaters);
+    margin-bottom: 50px;
+}
+
+#projects h4 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.project-card {
+    display: flex;
+}
+
+.project-image-btns {
+    flex: 0 1 60%;
+}
+
+img {
+    width: 100%;
+}
+
+.project-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.btn-left, 
+.btn-right {
+    flex: 1 1 50%;
+    text-align: center;
+    background-color: var(--iceyWaters);
+    padding: 10px 0;
+    color: var(--cloudWhite);
+    text-decoration: none;
+}
+
+.btn-left {
+    border-radius: 8px 0 0 8px;
+    border-right: solid 3px var(--coalBlack);
+}
+
+.btn-right {
+    border-radius: 0 8px 8px 0;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+    background-color: var(--coalBlack);
+}
+
+.project-text-info {
+    flex: 1 1 100%;
+    padding-left: 50px;
 }
