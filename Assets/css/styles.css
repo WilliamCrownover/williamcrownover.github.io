@@ -255,3 +255,55 @@ img {
 .contact-links-list li {
     margin: 15px 0;
 }
+
+/* --------------------------------------------------------------- */
+
+/* Media Queries */
+@media screen and (max-width: 720px) {
+    .flex-container {
+        display: block;
+        text-align: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .name-link {
+        margin: 15px 0;
+    }
+
+    li a {
+        padding: 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .flex-lists {
+        display: block;
+    }
+
+    .project-card {
+        display: block;
+    }
+
+    .project-text-info {
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .contact-flex {
+        display: block;
+        padding: 20px;
+        text-align: left;
+    }
+
+    .contact-links,
+    .contact-links h4 {
+        text-align: left;
+    }
+}
